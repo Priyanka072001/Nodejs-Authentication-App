@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="/css/profile.css">
+<link rel="stylesheet" href="/css/sign-up.css">
+<h1 id="style">Nodejs Authentication App</h1>
+<div id="login-box1">
+
+      <h1>Update Password</h1>
+      <div class="left2">
+      <form action="/users/update/" method="POST">
+        <h5 id="change">Name :<%=profile_user.name%></h5>
+        <h5 id="change">Email :<%=profile_user.email%></h5>
+      <input type="password" name="current_password" placeholder="Current Password*" required />
+      <input type="password" name="password" placeholder="New Password*" required />
+      <input type="password" name="confirm_password" placeholder="Re Enter the Password*" required />
+      
+      <span id="Req">* Required fields.</span>
+      <input id="sub" type="submit" value="UPDATE" />
+    </div>
+    </form>
+  </div>

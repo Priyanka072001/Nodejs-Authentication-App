@@ -1,0 +1,27 @@
+<h1 id="style">Nodejs Authentication App</h1>
+<div id="login-box">
+    <div class="left">
+      <h1>Sign Up For Free</h1>
+      <form action="/users/create" method="POST">
+      <input type="text" name="name" id="name" placeholder="Name*" required />
+      <input type="text" name="email" id="email" placeholder="E-mail*" required />
+      <input type="password" name="password" id="password" placeholder="Password*" required />
+      <input type="password" name="confirm_password" placeholder="Confirm Password*" required />
+      <span id="Req">* Required fields.</span>
+      <input type="submit" value="SIGN UP" />
+    </form>
+    </div>
+    
+    <div class="right">
+      <!-- <span class="loginwith">Sign in with<br />social network</span> -->
+      <button class="social-signin google"><a href="/users/auth/google">Sign In with Google</a></button>
+        <div id="signinn">
+            <span>Existing User?</span>
+            <a href="/users/signin"><button class="btn2">SIGN IN</button></a>
+        </div>
+
+    </div>
+    <div class="or">OR</div>
+
+    
+  </div>

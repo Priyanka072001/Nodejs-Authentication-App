@@ -1,0 +1,14 @@
+<header>
+    <a id="homee" href="/">Authentication App</a>
+    <ul>
+        <% if(locals.user) { %>
+            <li>
+                <a class="profile-name" href="/users/profile"><%=user.name %></a>
+            </li>
+            <li>
+                <a class="log-out" href="/users/sign-out">Log Out</a>
+            </li>
+
+         <% } %>    
+    </ul>
+</header>
